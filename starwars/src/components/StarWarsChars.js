@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Typography, Card, CardMedia, CardContent, Container, Grid } from '@material-ui/core/';
+import { Card, CardMedia, CardContent, Grid } from '@material-ui/core/';
 
 const useStyles = makeStyles({
     
     card: {
         background: '#8a7b1294',
         maxWidth: '395px',
-        margin: '0 auto'
+        margin: '30px auto'
     },
     name: {
         color: 'white',

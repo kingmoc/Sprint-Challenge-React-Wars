@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import StarWarsChars from './StarWarsChars'
 import axios from 'axios'
 import { makeStyles } from '@material-ui/core/styles';
-import Loader from 'react-loader-spinner';
+// import Loader from 'react-loader-spinner';
 
 const useStyles = makeStyles({
     
     cardContainer: {
-        // color: 'red'
+        color: 'red'
     },
 
 });
 
 const StarWarsInfo = (props) => {
     const classes = useStyles()
-    const [charInfo, setCharInfo] = useState(null)
+    const [charInfo, setCharInfo] = useState([])
 
     useEffect(() => {
         axios
@@ -28,9 +28,9 @@ const StarWarsInfo = (props) => {
             .catch(err => console.log(err.response))
     }, [])
 
-    if(charInfo === null) {
-        return <Loader type="Triangle" color="#00BFFF" height="290" width="260" />
-    }
+    // if(charInfo === null) {
+    //     return <Loader type="Triangle" color="#00BFFF" height="290" width="260" />
+    // }
 
     if (charInfo) {
         return (
