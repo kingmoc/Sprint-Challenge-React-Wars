@@ -4,24 +4,24 @@ import App from './App';
 import StarWarsChars from './components/StarWarsChars'
 import renderer from 'react-test-renderer'
 
-// it('renders without crashing', () => {
-//   const div = document.createElement('div');
-//   ReactDOM.render(<App />, div);
-//   ReactDOM.unmountComponentAtNode(div);
-// });
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
+});
 
-// describe('<App />', () => {
-//     it('should match snapshot', () => {
-//       const tree = renderer.create(<App />).toJSON();
-  
-//       expect(tree).toMatchSnapshot();
-//     });
-// });
-
-describe('<StarWarsChars />', () => {
+describe('<App />', () => {
     it('should match snapshot', () => {
-      const tree = renderer.create(<StarWarsChars />).toJSON();
+      const tree = renderer.create(<App />).toJSON();
   
       expect(tree).toMatchSnapshot();
     });
 });
+
+// describe('<StarWarsChars />', () => {
+//     it('should match snapshot', () => {
+//       const tree = renderer.create(<StarWarsChars />).toJSON();
+  
+//       expect(tree).toMatchSnapshot();
+//     });
+// });
