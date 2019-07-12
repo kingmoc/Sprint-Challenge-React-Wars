@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="Header"
+  >
+    React Wars
+  </h1>
+  <div>
+    <div
+      className="react-spinner-loader-svg"
+    >
+      <svg
+        height="290"
+        id="triangle"
+        viewBox="-3 -4 39 39"
+        width="290"
+      >
+        <polygon
+          fill="transparent"
+          points="16,0 32,32 0,32"
+          stroke="#00BFFF"
+          strokeWidth="1"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
