@@ -4,13 +4,10 @@ import { Paper, Typography, Card, CardMedia, CardContent, Container, Grid } from
 
 const useStyles = makeStyles({
     
-    photo: {
-        // maxWidth: '65vw',
-        // margin: '16px auto 10px'
-    },
     card: {
         background: '#8a7b1294',
-        maxWidth: '395px'
+        maxWidth: '395px',
+        margin: '0 auto'
     },
     name: {
         color: 'white',
@@ -20,7 +17,8 @@ const useStyles = makeStyles({
         margin: '0'
     },
     cardContent: {
-        flexDirection: 'column'
+        flexDirection: 'column',
+        alignItems: 'center'
     }
 
 });
